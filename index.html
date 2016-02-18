@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="custom-made stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Ping Pong</title>
 
   </head> <!-- end of the head tag -->
@@ -93,29 +99,24 @@
             <li>Numbers divisible by 15 are replaced with "pingpong"</li>
           </ol>
         </p>
-        <div class="form-inline"> <!-- to left align and inline block -->
+        <div class="form-inline"> <!-- inline block -->
           <div class="form-group">
             <form id="pingpong">
               <lable class="form-control-static"><strong> Enter your number here:</strong></lable>
-              <input type="text" class="form-control-static" placeholder=" Type a number...">
-            </form> <!-- end of the form with Id pingpong -->
+              <input type="text" id="form-control-static" placeholder=" Type a number...">
+              <button type="submit" class="btn btn-default active" class="pingpong_Game()">Ping Pong!</button>
+              <ul  id="results"> </ul>
+            </form><!-- end of the form with Id pingpong -->
           </div> <!-- end of class form-group -->
-          <button type="button" class="btn btn-default active" onclick="pingpong_Game()">Ping Pong!</button>
-          <ul  id="results"> </ul>
         </div> <!-- end of the class form-inline -->
     </div><!-- /.container -->
 
 
+    <div class="error">
+      <h5>Sorry the number you entered in zero or below zero.
+        Please <a href="index.html">try again</a>.</h5>
+    </div>
 
-
-
-
-
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
 
   </body> <!-- end of body tag -->
 </html>
