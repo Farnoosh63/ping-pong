@@ -1,0 +1,16 @@
+.container {
+  text-align: center;
+}
+
+ol {
+  list-style-position:inside;
+}
+
+.error {
+  display : none;
+  text-align: center;
+}
+
+.results, .error {
+  display: none;
+}
