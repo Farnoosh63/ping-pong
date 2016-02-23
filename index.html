@@ -32,11 +32,11 @@
           </button>
           <a class="navbar-brand" href="http://www.epicodus.com/">Epicodus</a>
         </div> <!-- end of class navbar-header -->
-        <form class="navbar-form navbar-left" role="search">
+        <form class="navbar-form navbar-left" id="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Type something">
+            <input type="text" id="something" placeholder="Type something">
+            <button type="submit" class="btn btn-default">Submit</button>
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="mailto:farnoosh@pdx.edu">Contact Me</a></li>
@@ -103,8 +103,7 @@
           <div class="form-group">
             <form data-toggle="validator" role="form">
               <lable class="form-control-static"><strong> Enter your number here:</strong></lable>
-              <input type="text" id="form-control" placeholder=" Type a number..."
-              data-error="Bruh, that email address is invalid" required>
+              <input type="text" id="form-control" placeholder=" Type a number..." required>
               <button type="submit" class="btn btn-default active" class="pingpong()">Ping Pong!</button>
               <ul id="results"> </ul>
             </form><!-- end of the form with Id pingpong -->

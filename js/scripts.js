@@ -1,4 +1,9 @@
 $(document).ready(function(){
+  $("form#search").submit(function(event){
+    var userType = $("input#something").val();
+    alert("you said: "+userType);
+    event.preventDefault();
+  })
   $(".container").submit(function pingpong(event){
     var userInput = parseInt($("input#form-control").val());
     var listResult = "";
