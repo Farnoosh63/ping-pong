@@ -1,7 +1,8 @@
 $(document).ready(function(){
   $(".container").submit(function pingpong(event){
-    var userInput = parseInt($("input#form-control-static").val());
+    var userInput = parseInt($("input#form-control").val());
     var listResult = "";
+
 
     if (userInput <= 0){
       $("#results").hide();
