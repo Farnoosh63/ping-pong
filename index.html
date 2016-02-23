@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="custom-made stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Ping Pong</title>
+
+  </head> <!-- end of the head tag -->
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.epicodus.com/">Epicodus</a>
+        </div> <!-- end of class navbar-header -->
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Type something">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="mailto:farnoosh@pdx.edu">Contact Me</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+            role="button" aria-haspopup="true" aria-expanded="false">
+            Github <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://farnoosh63.github.io/ping-pong/">Github Pages</a></li>
+              <li><a href="https://github.com/Farnoosh63/ping-pong">Github repository</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="https://www.learnhowtoprogram.com/intro-to-programming-evening/business-logic-with-javascript/code-review">
+              Code Review</a></li>
+            </ul> <!-- end of class dropdown-menu -->
+          </li> <!-- end of class dropdown -->
+        </ul> <!-- end of class nav navbar-nav navbar-right -->
+      </div> <!-- /.container-fluid -->
+    </nav> <!-- end of class navbar navbar-default" -->
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+  <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="http://placehold.it/2000x750/0033CC/FFFFFF&text=Play Ping Pong." alt="...">
+      </div> <!-- end of class item active -->
+      <div class="item">
+        <img src="http://placehold.it/2000x750/FF3300/FFFFFF&text=Happy Coding Everyone." alt="...">
+      </div> <!-- end of class item -->
+      <div class="item">
+        <img src="http://placehold.it/2000x750/FFEA2B/FFFFFF&text=Play Again." alt="...">
+      </div> <!-- end of class item -->
+    </div> <!-- end of class carousel-inner -->
+
+  <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> <!-- end of id="carousel-example-generic" class="carousel slide"-->
+
+
+    <div class="container">
+      <h1>Rules:</h1>
+        <p class="lead">Ping Pong will count up to your number from
+          1 with the following exceptions: <br>
+          <ol>
+            <li>Numbers divisible by 3 are replaced with "ping"</li>
+            <li>Numbers divisible by 5 are replaced with "pong"</li>
+            <li>Numbers divisible by 15 are replaced with "pingpong"</li>
+          </ol>
+        </p>
+        <div class="form-inline"> <!-- inline block -->
+          <div class="form-group">
+            <form id="pingpong">
+              <lable class="form-control-static"><strong> Enter your number here:</strong></lable>
+              <input type="text" id="form-control-static" placeholder=" Type a number...">
+              <button type="submit" class="btn btn-default active" class="pingpong()">Ping Pong!</button>
+              <ul  id="results"> </ul>
+            </form><!-- end of the form with Id pingpong -->
+          </div> <!-- end of class form-group -->
+        </div> <!-- end of the class form-inline -->
+    </div><!-- /.container -->
+
+
+    <div class="error">
+      <h5>Sorry the number you entered in zero or below zero.
+        Please <a href="index.html">try again</a>.</h5>
+    </div>
+
+
+  </body> <!-- end of body tag -->
+</html>

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $(".container").submit(function(event){
+  $(".container").submit(function pingpong(event){
     var userInput = parseInt($("input#form-control-static").val());
     var listResult = "";
 
